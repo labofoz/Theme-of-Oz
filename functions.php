@@ -1,4 +1,16 @@
 <?php
+/**
+ * Add theme supports
+ */
+add_action('after_setup_theme', function () {
+  add_theme_support('custom-logo', [
+    'height'      => 200,
+    'width'       => 200,
+    'flex-width'  => true,
+    'flex-height' => true,
+    'header-text' => ['site-title', 'site-description']
+  ]);
+});
 
 /**
  * Include styles

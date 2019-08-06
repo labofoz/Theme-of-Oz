@@ -5,6 +5,29 @@ Description: A minimalist WordPress theme designed for the Gutenberg Editor 🎨
 Author: Oz Ramos <heyozramos@gmail.com>
 Author URI: https://ozramos.com
 */
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+}
+#header-main {
+  height: 80px;
+}
+#header-main .site-logo {
+  float: left;
+  margin-right: 10px;
+}
+#header-main .site-logo img {
+  height: 80px;
+  width: auto;
+}
+#header-main .custom-logo-link {
+  vertical-align: middle;
+  display: inline-block;
+}
+#header-main .site-title {
+  font-size: 1em;
+}
 
 
 /*# sourceMappingURL=/style.css.map */
