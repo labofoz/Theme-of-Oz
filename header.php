@@ -36,7 +36,7 @@ $site = [
 
             <!-- Description -->
             <?php if ($site['description']): ?>
-              <p class="site-description"><?= $site['description'] ?></p>
+              <div class="site-description"><?= $site['description'] ?></div>
             <?php endif ?>
           </div>
         </div>

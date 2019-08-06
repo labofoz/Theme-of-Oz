@@ -12,6 +12,9 @@ html {
 a {
   text-decoration: none;
 }
+.flex {
+  display: flex;
+}
 .container {
   width: 1200px;
   max-width: 100%;
@@ -20,62 +23,46 @@ a {
 #header-main {
   height: 80px;
 }
-#header-main .site-branding {
-  display: inline-block;
-  vertical-align: middle;
-  width: 300px;
+#header-main .container {
+  display: flex;
+  justify-content: space-between;
 }
-#header-main .site-logo {
-  float: left;
-  margin-right: 20px;
+#header-main .site-branding {
+  display: flex;
+  justify-content: center;
 }
 #header-main .site-logo img {
   height: 80px;
   width: auto;
+  margin-right: 20px;
 }
-#header-main .custom-logo-link {
-  vertical-align: middle;
-  display: inline-block;
+#header-main .site-title-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #header-main .site-title {
   font-size: 1.25em;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
-#header-main .site-title a {
-  color: #4b4b75;
+#header-main .site-description {
+  max-width: 250px;
 }
-.menu-main-container {
-  margin-left: 0;
-  padding-left: 0;
-  vertical-align: middle;
-  float: right;
+@media screen and (max-width: 800px) {
+  #header-main .site-description {
+    display: none;
+  }
 }
-.menu-main-container ul {
-  display: inline-block;
-  vertical-align: middle;
+#header-main .menu-main-container {
+  display: flex;
+  align-items: center;
 }
-.menu-main-container li {
-  float: left;
-  margin: 0 10px;
+#header-main .menu-main-container ul {
+  display: flex;
   list-style: none;
 }
-.menu-main-container li:first-child {
-  margin-left: 0;
-}
-.menu-main-container li:last-child {
-  margin-right: 0;
-}
-.menu-main-container li.current-menu-item a {
-  color: #4b4b75;
-  font-weight: 900;
-}
-.home #header-main .site-title {
-  margin-top: 1.25em;
-}
-.home #header-main .site-description {
-  display: none;
+#header-main .menu-main-container li {
+  margin: 0 20px;
 }
 
 

@@ -1,60 +1,44 @@
 #header-main
   height $headerHeight
 
+  .container
+    display flex
+    justify-content space-between
+
   .site-branding
-    display inline-block
-    vertical-align middle
-    width 300px
-    
+    display flex
+    justify-content center
+
   .site-logo
-    float left
-    margin-right $pushMd
     img
       height $headerHeight
       width auto
+      margin-right $pushMd
 
-  .custom-logo-link
-    vertical-align middle
-    display inline-block
+  .site-title-wrap
+    display flex
+    flex-direction column
+    justify-content space-around
 
+    // @media screen and (max-width: 800px)
+    
   .site-title
     font-size 1.25em
-    font-weight 900
-    margin-top 0
-    margin-bottom 0
-    
-    a
-      color $colorText
+    margin 0
 
-// Menu
-.menu-main-container
-  margin-left 0
-  padding-left 0
-  vertical-align middle
-  float right
-
-  ul
-    display inline-block
-    vertical-align middle
-  
-  li
-    float left
-    margin 0 $push
-    list-style none
-    
-    &:first-child
-      margin-left 0
-    &:last-child
-      margin-right 0
-
-    &.current-menu-item
-      a
-        color $colorText
-        font-weight 900
-    
-// Hide description on front page
-.home #header-main
-  .site-title
-    margin-top 1.25em
   .site-description
-    display none
+    max-width 250px
+
+    @media screen and (max-width: 800px)
+      display none
+
+  .menu-main-container
+    display flex
+    align-items center
+
+    ul
+      display flex
+      list-style none
+
+    li
+      margin 0 $pushMd
