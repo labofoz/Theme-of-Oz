@@ -17,6 +17,7 @@ $site = [
 </head>
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
+  <div id="overlay"></div>
   <div id="app">
     <header id="header-main">
       <div class="container">
@@ -49,5 +50,6 @@ $site = [
             'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>'
           ]) ?>
         <?php endif; ?>
+        <button class="toggle-menu-main">Show Menu</button>
       </div>
     </header>

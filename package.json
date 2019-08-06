@@ -4,7 +4,8 @@
   "description": "A minimalist WordPress theme designed for the Gutenberg Editor 🎨",
   "main": "index.js",
   "scripts": {
-    "start": "npx parcel watch src/styles/app.styl",
+    "start": "npx parcel watch src/styles/main.styl src/js/app.js",
+    "build": "npx parcel build src/styles/main.styl src/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/ozramos/theme-of-oz#readme",
   "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-plugin-clean-dist": "^0.0.6",
     "stylus": "^0.54.5"
   }
 }
