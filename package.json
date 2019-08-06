@@ -4,7 +4,7 @@
   "description": "A minimalist WordPress theme designed for the Gutenberg Editor 🎨",
   "main": "index.js",
   "scripts": {
-    "start": "npx parcel watch src/styles/style.styl",
+    "start": "npx parcel watch src/styles/app.styl",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

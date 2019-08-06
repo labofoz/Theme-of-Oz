@@ -1,4 +1,4 @@
 .cache
 node_modules
-dist/style.js
-dist/style.js.map
+dist/*.js
+dist/*.js.map
