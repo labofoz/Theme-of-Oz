@@ -4,6 +4,7 @@
   "description": "A minimalist WordPress theme designed for the Gutenberg Editor 🎨",
   "main": "index.js",
   "scripts": {
+    "start": "npx parcel watch src/style.styl",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ozramos/theme-of-oz/issues"
   },
-  "homepage": "https://github.com/ozramos/theme-of-oz#readme"
+  "homepage": "https://github.com/ozramos/theme-of-oz#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
 }
