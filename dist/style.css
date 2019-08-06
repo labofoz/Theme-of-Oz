@@ -13,6 +13,10 @@ Author URI: https://ozramos.com
 #header-main {
   height: 80px;
 }
+#header-main .site-branding {
+  display: inline-block;
+  width: 300px;
+}
 #header-main .site-logo {
   float: left;
   margin-right: 10px;
@@ -27,6 +31,15 @@ Author URI: https://ozramos.com
 }
 #header-main .site-title {
   font-size: 1em;
+  margin-top: 0;
+}
+.menu-main-container {
+  float: right;
+}
+.menu-main-container li {
+  float: left;
+  margin-right: 10px;
+  list-style: none;
 }
 
 

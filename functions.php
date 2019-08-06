@@ -10,6 +10,11 @@ add_action('after_setup_theme', function () {
     'flex-height' => true,
     'header-text' => ['site-title', 'site-description']
   ]);
+
+  // This theme uses wp_nav_menu() in two locations.
+  register_nav_menus([
+    'menu-main' => __( 'Main', 'themeofoz' )
+  ]);
 });
 
 /**

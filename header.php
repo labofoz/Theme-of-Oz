@@ -19,21 +19,34 @@ $site = [
   <div id="app">
     <header id="header-main">
       <div class="container">
-        <!-- Logo -->
-        <?php if (has_custom_logo()): ?>
-          <div class="site-logo"><?php the_custom_logo() ?></div>
-        <?php endif ?>
+        <div class="site-branding">
+          <!-- Logo -->
+          <?php if (has_custom_logo()): ?>
+            <div class="site-logo"><?php the_custom_logo() ?></div>
+          <?php endif ?>
 
-        <!-- Title -->
-        <?php if ($site['name']): ?>
-          <h1 class="site-title">
-            <a href="<?= esc_url(home_url('/')) ?>"><?= $site['name'] ?></a>
-          </h1>
-        <?php endif ?>
+          <!-- Title -->
+          <div class="site-title-wrap">
+            <?php if ($site['name']): ?>
+              <h1 class="site-title">
+                <a href="<?= esc_url(home_url('/')) ?>"><?= $site['name'] ?></a>
+              </h1>
+            <?php endif ?>
 
-        <!-- Description -->
-        <?php if ($site['description']): ?>
-          <p class="site-description"><?= $site['description'] ?></p>
-        <?php endif ?>
+            <!-- Description -->
+            <?php if ($site['description']): ?>
+              <p class="site-description"><?= $site['description'] ?></p>
+            <?php endif ?>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <?php if (has_nav_menu('menu-main')): ?>
+          <?php wp_nav_menu([
+            'theme_location' => 'menu-main',
+            'menu_class' => 'menu-main',
+            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>'
+          ]) ?>
+        <?php endif; ?>
       </div>
     </header>
