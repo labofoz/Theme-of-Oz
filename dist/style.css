@@ -5,6 +5,13 @@ Description: A minimalist WordPress theme designed for the Gutenberg Editor 🎨
 Author: Oz Ramos <heyozramos@gmail.com>
 Author URI: https://ozramos.com
 */
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #4b4b75;
+}
+a {
+  text-decoration: none;
+}
 .container {
   width: 1200px;
   max-width: 100%;
@@ -15,11 +22,12 @@ Author URI: https://ozramos.com
 }
 #header-main .site-branding {
   display: inline-block;
+  vertical-align: middle;
   width: 300px;
 }
 #header-main .site-logo {
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 #header-main .site-logo img {
   height: 80px;
@@ -30,16 +38,44 @@ Author URI: https://ozramos.com
   display: inline-block;
 }
 #header-main .site-title {
-  font-size: 1em;
+  font-size: 1.25em;
+  font-weight: 900;
   margin-top: 0;
+  margin-bottom: 0;
+}
+#header-main .site-title a {
+  color: #4b4b75;
 }
 .menu-main-container {
+  margin-left: 0;
+  padding-left: 0;
+  vertical-align: middle;
   float: right;
+}
+.menu-main-container ul {
+  display: inline-block;
+  vertical-align: middle;
 }
 .menu-main-container li {
   float: left;
-  margin-right: 10px;
+  margin: 0 10px;
   list-style: none;
+}
+.menu-main-container li:first-child {
+  margin-left: 0;
+}
+.menu-main-container li:last-child {
+  margin-right: 0;
+}
+.menu-main-container li.current-menu-item a {
+  color: #4b4b75;
+  font-weight: 900;
+}
+.home #header-main .site-title {
+  margin-top: 1.25em;
+}
+.home #header-main .site-description {
+  display: none;
 }
 
 
