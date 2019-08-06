@@ -1,0 +1,19 @@
+{
+  "name": "theme-of-oz",
+  "version": "0.1.0",
+  "description": "A minimalist WordPress theme designed for the Gutenberg Editor 🎨",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozramos/theme-of-oz.git"
+  },
+  "author": "Oz Ramos <heyozramos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozramos/theme-of-oz/issues"
+  },
+  "homepage": "https://github.com/ozramos/theme-of-oz#readme"
+}
