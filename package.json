@@ -20,7 +20,7 @@
   "homepage": "https://github.com/ozramos/theme-of-oz#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "parcel-plugin-clean-dist": "^0.0.6",
+    "parcel-plugin-clean-dist": "0.0.6",
     "stylus": "^0.54.5"
   }
 }
